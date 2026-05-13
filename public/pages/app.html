@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeadStudio - Desain Gelangmu</title>
+    <link rel="stylesheet" href="../../src/style/app.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">BeadStudio</div>
+        <button class="btn-primary">Cetak Gelang</button>
+    </nav>
+
+    <div class="main-container">
+        <!-- Sidebar Kiri: Panel Manik-manik & Template -->
+        <aside class="sidebar">
+            <div class="tabs">
+                <button onclick="showTab('beads')" class="tab-btn active">Manik</button>
+                <button onclick="showTab('templates')" class="tab-btn">Template</button>
+            </div>
+
+            <div id="beads" class="panel-content">
+                <h3>Pilih Manik</h3>
+                <div class="bead-grid">
+                    <div class="bead-item" draggable="true" data-shape="circle" style="background: #ffadad;"></div>
+                    <div class="bead-item" draggable="true" data-shape="heart" style="background: #ffd6a5;">❤</div>
+                    <div class="bead-item" draggable="true" data-shape="star" style="background: #fdffb6;">★</div>
+                    <div class="bead-item" draggable="true" data-shape="square" style="background: #caffbf;"></div>
+                </div>
+            </div>
+
+            <div id="templates" class="panel-content hidden">
+                <h3>Template Jadi</h3>
+                <div class="template-item" onclick="loadTemplate('pastel')">Pastel Dream</div>
+                <div class="template-item" onclick="loadTemplate('starry')">Starry Night</div>
+            </div>
+        </aside>
+
+        <!-- Area Editor Tengah -->
+        <main class="editor-area">
+            <div class="canvas-container">
+                <div class="string-line"></div> <!-- Tali gelang -->
+                <div id="bead-canvas" class="bead-canvas">
+                    <!-- Manik-manik akan muncul di sini -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Kanan: Properti Warna -->
+        <aside class="property-panel">
+            <h3>Kustomisasi</h3>
+            <label>Warna Manik:</label>
+            <input type="color" id="colorPicker" value="#ffadad">
+            <hr>
+            <button class="btn-danger" onclick="clearCanvas()">Hapus Semua</button>
+        </aside>
+    </div>
+
+    <script src="../../src/script/app.js"></script>
+</body>
+</html>
