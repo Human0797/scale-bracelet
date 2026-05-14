@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="src/style/index.css">
+    <link rel="stylesheet" href="src/style/index.css" />
 
     <!-- ICON -->
-         <link
+    <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
@@ -27,59 +30,269 @@
     <title>Scale</title>
   </head>
   <body>
-      <nav>
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html"><i class="ph ph-pen-nib-straight"></i> SCALE</a>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><i class="ph ph-pen-nib-straight"></i> SCALE</a>
+        </div>
+
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle-checkbox"
+          aria-label="Toggle navigation"
+        />
+        <label
+          for="nav-toggle"
+          class="nav-toggle"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="link">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="public/pages/design.html">Design</a></li>
+          <li><a href="public/pages/shop.html">Shop</a></li>
+          <li><a href="public/pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="lgn-btn">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="signup">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN START DISINI YAAAAA -->
+    <main>
+      <section class="hero hero-primary">
+        <div class="hero-content hero-content-first">
+          <span class="eyebrow">Desain gelang, ekspresikan dirimu</span>
+          <h1>Satu aplikasi, segudang kreasi</h1>
+          <p>
+            Bawa semua ide gelangmu ke dalam satu ruang yang mudah digunakan,
+            penuh pilihan manik, warna, dan inspirasi.
+          </p>
+          <div class="hero-actions hero-actions-first">
+            <a href="#features" class="btn-primary">Mulai Kreasi</a>
+            <a href="#faq" class="btn-secondary">Lihat FAQ</a>
           </div>
+        </div>
+        <div class="hero-visual">
+          <div class="device-card">
+            <div class="device-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="device-screen">
+              <div class="screen-top">
+                <span class="chip"></span>
+                <span class="chip small"></span>
+              </div>
+              <div class="screen-body">
+                <div class="screen-cta">
+                  <h2>Scale</h2>
+                  <p>Sistem desain gelang full custom.</p>
+                </div>
+                <div class="screen-feature">
+                  <div><strong>100+</strong> Manik</div>
+                  <div><strong>4</strong> Tema</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation">
-          <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+      <br />
 
-          <ul class="link">
+      <section id="features" class="section-features">
+        <div class="section-heading">
+          <span class="small-title">Satu aplikasi segudang kreasi</span>
+          <h2>Kreasikan gelang unik dengan cepat</h2>
+          <p>
+            Fitur lengkap untuk memilih manik, menyusun pola, dan merencanakan
+            desain dalam satu aplikasi intuitif.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <i class="ph ph-shapes"></i>
+            <h3>Variasi Manik</h3>
+            <p>
+              Koleksi manik beragam bentuk, warna dan tekstur untuk setiap ide.
+            </p>
+          </article>
+          <article class="feature-card">
+            <i class="ph ph-palette"></i>
+            <h3>Palet Warna</h3>
+            <p>
+              Pilih kombinasi warna hangat dan pastel yang cocok untuk setiap
+              gaya.
+            </p>
+          </article>
+          <article class="feature-card">
+            <i class="ph ph-stack"></i>
+            <h3>Template Kreatif</h3>
+            <p>
+              Template siap pakai untuk desain cepat dan inspirasi tanpa ribet.
+            </p>
+          </article>
+          <article class="feature-card">
+            <i class="ph ph-cloud-arrow-up"></i>
+            <h3>Simpan &amp; Bagikan</h3>
+            <p>Amankan desain favoritmu dan bagikan ke teman dengan mudah.</p>
+          </article>
+        </div>
+      </section>
+
+      <br />
+
+      <section class="section-reviews">
+        <div class="section-heading">
+          <span class="small-title">Ulasan</span>
+          <h2>Dibuat oleh pencinta gelang</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <p>
+              "Scale membantu saya membuat gelang custom dalam hitungan menit.
+              Antarmukanya bersih dan mudah dipakai."
+            </p>
+            <strong>Aria L.</strong>
+            <span>Perajin Gelang</span>
+          </article>
+          <article class="review-card">
+            <p>
+              "Desain warna dan pola jadi lebih rapi. Sekarang saya bisa
+              menyimpan semua ide tanpa takut hilang."
+            </p>
+            <strong>Bima S.</strong>
+            <span>Desainer Aksesoris</span>
+          </article>
+          <article class="review-card">
+            <p>
+              "Fitur template membuat proses produksi lebih cepat. Cocok untuk
+              dijadikan studio mini pribadi."
+            </p>
+            <strong>Gita N.</strong>
+            <span>Pengusaha Kerajinan</span>
+          </article>
+        </div>
+      </section>
+
+      <br />
+
+      <section id="faq" class="section-faq">
+        <div class="section-heading">
+          <span class="small-title">FAQ</span>
+          <h2>Pertanyaan yang sering diajukan</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Apa yang bisa dipilih di Scale?</summary>
+            <p>
+              Kamu bisa memilih manik, pola, warna, dan template untuk membuat
+              desain gelang personal.
+            </p>
+          </details>
+          <details>
+            <summary>Apakah desain bisa disimpan?</summary>
+            <p>
+              Ya, desain dapat disimpan sebagai inspirasi atau referensi untuk
+              produksi selanjutnya.
+            </p>
+          </details>
+          <details>
+            <summary>Apakah Scale cocok untuk pemula?</summary>
+            <p>
+              Sangat cocok. Antarmuka dibuat sederhana agar siapa saja bisa
+              langsung memulai desain.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <br />
+
+      <section class="hero hero-secondary">
+        <div class="hero-content hero-content-last">
+          <div class="hero-content-left">
+            <span class="eyebrow">Akhiri dengan kreasi terbaik</span>
+            <h2>Siap ciptakan gelang impianmu?</h2>
+            <p>
+              Bergabunglah sekarang dan mulai jelajahi semua kemungkinan desain
+              dengan Scale.
+            </p>
+            <div class="hero-actions">
+              <a href="#" class="btn-primary">Mulai Sekarang</a>
+            </div>
+          </div>
+          <div class="hero-content-right">
+            <img
+              src="src/img/index/7ff75557c075e677adee5e5d00bc4c3a.jpg"
+              alt="Gelang Custom"
+              class="hero-image-last"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN END DISINI YAAAAAAA -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html"><i class="ph ph-pen-nib-straight"></i> SCALE</a>
+        </div>
+
+        <div class="footer-links">
+          <strong>Explore</strong>
+          <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="public/pages/design.html">Design</a></li>
+            <li><a href="public/pages/shop.html">Shop</a></li>
+            <li><a href="public/pages/contact.html">Contact</a></li>
           </ul>
-
-          <div class="lgn-btn">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up</a>
-          </div>
         </div>
-      </nav>
 
-
-      <!-- MAIN START DISINI YAAAAA -->
-
-
-      <!-- MAIN END DISINI YAAAAAAA -->
-      <footer class="site-footer">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <a href="index.html"><i class="ph ph-pen-nib-straight"></i> SCALE</a>
-          </div>
-
-          <div class="footer-links">
-            <strong>Explore</strong>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="shop.html">Design</a></li>
-              <li><a href="contact.html">Product</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <strong>Contact</strong>
-            <p>Jl. Profesor DR. HR Boenyamin No.708,<br> Dukuhmbudang, Brendeng, Kec. Purwokerto Utara, Kabupaten Banyumas,<br> Jawa Tengah 53122</p>
-            <p>+62-8838-9343-4354</p>
-            <p>scalebracelets@gmail.com</p>
-          </div>
+        <div class="footer-contact">
+          <strong>Contact</strong>
+          <p>
+            Jl. Profesor DR. HR Boenyamin No.708,<br />
+            Dukuhmbudang, Brendeng, Kec. Purwokerto Utara, Kabupaten
+            Banyumas,<br />
+            Jawa Tengah 53122
+          </p>
+          <p>+62-8838-9343-4354</p>
+          <p>scalebracelets@gmail.com</p>
         </div>
-      </footer>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login to Scale</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">Login</button>
+        </form>
+        <p class="signup-link">Belum punya akun? <a href="#" class="signup-modal">Sign Up</a></p>
+      </div>
+    </div>
+
+    <script src="src/script/index.js"></script>
   </body>
 </html>

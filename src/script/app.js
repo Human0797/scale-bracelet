@@ -7,11 +7,13 @@ function showTab(tabId) {
 }
 
 // Menambah Manik ke Canvas (Logic: Klik atau Drag)
-document.querySelectorAll('.bead-item').forEach(item => {
-    item.addEventListener('click', () => {
-        addBeadToCanvas(item.dataset.shape, item.style.backgroundColor, item.innerText);
+if (document.querySelector('.bead-item')) {
+    document.querySelectorAll('.bead-item').forEach(item => {
+        item.addEventListener('click', () => {
+            addBeadToCanvas(item.dataset.shape, item.style.backgroundColor, item.innerText);
+        });
     });
-});
+}
 
 function addBeadToCanvas(shape, color, content = "") {
     const canvas = document.getElementById('bead-canvas');
@@ -33,11 +35,13 @@ function addBeadToCanvas(shape, color, content = "") {
 }
 
 // Update Warna
-document.getElementById('colorPicker').addEventListener('input', (e) => {
-    if(selectedBead) {
-        selectedBead.style.backgroundColor = e.target.value;
-    }
-});
+if (document.getElementById('colorPicker')) {
+    document.getElementById('colorPicker').addEventListener('input', (e) => {
+        if(selectedBead) {
+            selectedBead.style.backgroundColor = e.target.value;
+        }
+    });
+}
 
 // Fungsi Template
 function loadTemplate(type) {
@@ -46,6 +50,25 @@ function loadTemplate(type) {
         const colors = ['#ffadad', '#ffd6a5', '#fdffb6', '#caffbf'];
         colors.forEach(c => addBeadToCanvas('circle', c));
     }
+}
+
+function clearCanvas() {
+    const canvas = document.getElementById('bead-canvas');
+    if (canvas) {
+        canvas.innerHTML = '';
+    }
+}
+
+function rgbToHex(rgb) {
+    // Simple conversion, assuming rgb(r,g,b) format
+    const result = rgb.match(/\d+/g);
+    if (result) {
+        return "#" + result.map(x => {
+            const hex = parseInt(x).toString(16);
+            return hex.length === 1 ? "0" + hex : hex;
+        }).join("");
+    }
+    return rgb;
 }
 
 function clearCanvas() {
