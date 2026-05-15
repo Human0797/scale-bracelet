@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+         <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <title>Scale</title>
+
+    <!-- STYLE -->
+     <style>
+        :root {
+    --primary-ppl: #898AC4;
+    --sec-ppl: #A2AADB;
+    --thd-ppl: #C0C9EE;
+    --bg-white: #FFF2E0;
+    --bg-soft: #fff9f0;
+    --text-dark: #332f44;
+    --surface: rgba(255,255,255,0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f7f3fb 0%, #fff9f0 100%);
+    color: var(--text-dark);
+}
+
+/* Footer */
+.site-footer {
+    padding: 48px 32px;
+    background: rgba(255, 255, 255, 0.98);
+    border-top: 1px solid rgba(137, 138, 196, 0.18);
+    color: rgba(51, 47, 75, 0.9);
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.footer-brand a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-ppl);
+    text-decoration: none;
+}
+
+.footer-brand i {
+    font-size: 1.4rem;
+}
+
+.footer-links strong,
+.footer-contact strong {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.footer-links li a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links li a:hover {
+    color: var(--primary-ppl);
+}
+
+.footer-contact p {
+    margin: 0 0 0.85rem;
+    line-height: 1.7;
+    color: rgba(51, 47, 75, 0.82);
+}
+
+@media (max-width: 860px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .site-footer {
+        padding: 36px 20px;
+    }
+}
+
+     </style>
+
+  </head>      
+
+  <body>
+    
+  </body>
+      
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html"><i class="ph ph-pen-nib-straight"></i> SCALE</a>
+          </div>
+
+          <div class="footer-links">
+            <strong>Explore</strong>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Design</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <strong>Contact</strong>
+            <p>Jl. Profesor DR. HR Boenyamin No.708,<br> Dukuhmbudang, Brendeng, Kec. Purwokerto Utara, Kabupaten Banyumas,<br> Jawa Tengah 53122</p>
+            <p>+62-8838-9343-4354</p>
+            <p>scalebracelets@gmail.com</p>
+          </div>
+        </div>
+      </footer>
